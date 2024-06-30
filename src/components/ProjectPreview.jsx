@@ -13,9 +13,9 @@ const ProjectPreview = ({title, description, tags, callToAction, imageSource}) =
                     </div>
                     <div className={"flex flex-col gap-8 md:w-[55%]"}>
                         <span className={"text-black text-xl"}>{description}</span>
-                        <a className={"hidden md:flex flex-row gap-2 align-bottom "}>
+                        <a className={"group hidden md:flex flex-row gap-2 align-bottom "}>
                             <Image
-                                className={""}
+                                className={"group-hover:translate-x-1.5 transition-transform duration-500"}
                                 src={arrowIcon}
                                 alt="arrow"
                                 width={40}

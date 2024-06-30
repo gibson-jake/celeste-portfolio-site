@@ -23,12 +23,12 @@ const NavBar = () => {
     return (
         <nav className="bg-white fixed top-0 left-0 w-full z-10 ">
             <div className="py-14 px-8 md:p-14 flex items-center justify-between md:mx-[10%] ">
-                <div className="text-black text-xl font-semibold whitespace-nowrap"><a href="/public">Celeste Lu</a></div>
-                <div className="hidden md:flex space-x-10 text-black text-xl">
-                    <div><Link passHref={true} href={"/"}><a>Work</a></Link></div>
-                    <div><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></div>
-                    <div><Link passHref={true} href={"/about"}><a>About</a></Link></div>
-                    <div><a href="mailto:celestechanglu@gmail.com">Contact</a></div>
+                <div className="text-black text-xl font-semibold whitespace-nowrap"><a href="/">Celeste Lu</a></div>
+                <div className="hidden md:flex space-x-10 text-black text-xl ">
+                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}><Link passHref={true} href={"/"}><a>Work</a></Link></div>
+                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></div>
+                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}><Link passHref={true} href={"/about"}><a>About</a></Link></div>
+                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}><a href="mailto:celestechanglu@gmail.com">Contact</a></div>
                 </div>
                 <div className="flex md:hidden">
                     <button
