@@ -8,6 +8,7 @@ import ielcCover from '/public/images/ielcCover.png';
 import tkhsCover from '/public/images/tkhsCover.png';
 import Footer from "../components/Footer";
 import ProjectPreview from "../components/ProjectPreview";
+import React from "react";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
                             <Image
                                 className={"absolute -top-16 right-4 md:top-0 md:-right-6"}
                                 src={speechImage}
-                                alt="dot"
+                                alt=""
                                 width={40} // Adjust width
                                 height={40} // Adjust height
                             />
@@ -33,10 +34,17 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center relative">
                     <span className="whitespace-nowrap">
-                        <span className="relative inline-block">
+                        <span className="group relative inline-block">
                             i
                             <Image
-                                className={"absolute top-0.5 md:top-2.5 left-1/2 transform -translate-x-1/2"}
+                                className={"absolute group-hover:animate-heartbeat top-0.5 md:top-2.5"}
+                                src={dotImage}
+                                alt=""
+                                width={20} // Adjust width
+                                height={20} // Adjust height
+                            />
+                            <Image
+                                className={"absolute top-0.5 md:top-2.5"}
                                 src={dotImage}
                                 alt=""
                                 width={20} // Adjust width
@@ -48,7 +56,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center">
                     <span className="whitespace-nowrap relative">
-                        <span className="absolute -left-[4.3rem] md:-left-40 text-white text-[13px] md:text-2xl font-bold bg-tagColor md:py-1 px-2 md:px-5 rounded-2xl md:rounded-3xl leading-7 md:leading-normal bottom-[20%]">
+                        <span className="absolute transition hover:-rotate-12 ease-in-out duration-1000 -left-[4.3rem] md:-left-40 text-white text-[13px] md:text-2xl font-bold bg-tagColor md:py-1 px-2 md:px-5 rounded-2xl md:rounded-3xl leading-7 md:leading-normal bottom-[20%]">
                             product
                         </span>
                         <span>designer
@@ -80,6 +88,7 @@ export default function Home() {
                 tags={"WEBSITE & BRAND DESIGN・DESKTOP・MOBILE "}
                 callToAction={"Explore Project"}
                 imageSource={ielcCover}
+                link={"/ielc"}
             />
             <ProjectPreview
                 title={"The Kool Hair Studio"}

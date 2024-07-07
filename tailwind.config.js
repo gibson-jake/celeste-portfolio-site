@@ -14,7 +14,21 @@ module.exports = {
       },
       colors: {
         tagColor: '#40ACBA',
-      }
+      },
+      keyframes: {
+        'heartbeat': {
+          "75%": {
+            transform: "scale(1.5)",
+          },
+          "90%": {
+            transform: "scale(1)",
+            opacity: '0'
+          }
+        },
+      },
+      animation: {
+        'heartbeat': 'heartbeat 1s cubic-bezier(0, 0, 0.2, 1) infinite',
+      },
     },
   },
   plugins: [],

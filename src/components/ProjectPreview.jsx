@@ -2,7 +2,7 @@
 import Image from "next/image";
 import arrowIcon from "/public/images/Arrow.svg";
 
-const ProjectPreview = ({title, description, tags, callToAction, imageSource}) => {
+const ProjectPreview = ({title, description, tags, callToAction, imageSource, link}) => {
     return (
         <div className={"sm:w-[80%] 2xl:w-1/2 mx-4 my-16 md:m-16"}>
             <div className={"mb-6"}>
@@ -13,7 +13,7 @@ const ProjectPreview = ({title, description, tags, callToAction, imageSource}) =
                     </div>
                     <div className={"flex flex-col gap-8 md:w-[55%]"}>
                         <span className={"text-black text-xl"}>{description}</span>
-                        <a className={"group hidden md:flex flex-row gap-2 align-bottom "}>
+                        <a className={"group hidden md:flex flex-row gap-2 align-bottom "} href={link}>
                             <Image
                                 className={"group-hover:translate-x-1.5 transition-transform duration-500"}
                                 src={arrowIcon}
@@ -26,12 +26,14 @@ const ProjectPreview = ({title, description, tags, callToAction, imageSource}) =
                     </div>
                 </div>
             </div>
-            <Image
-                className={"rounded-3xl"}
-                src={imageSource}
-                alt="cover"
-            />
-            <a className={"md:hidden flex flex-row gap-2 align-bottom pt-6"}>
+            <a href={link}>
+                <Image
+                    className={"rounded-3xl"}
+                    src={imageSource}
+                    alt="cover"
+                />
+            </a>
+            <a className={"md:hidden flex flex-row gap-2 align-bottom pt-6"} href={link}>
                 <Image
                     className={""}
                     src={arrowIcon}

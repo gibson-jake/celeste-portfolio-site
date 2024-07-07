@@ -33,9 +33,9 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className={"*:px-10 leading-[2] *:text-black *:text-l"}>
-                        <div><Link passHref={true} href={"/"}><a>Work</a></Link></div>
+                        <div><Link passHref={true} href={"/"}>Work</Link></div>
                         <div><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></div>
-                        <div><Link passHref={true} href={"/about"}><a>About</a></Link></div>
+                        <div><Link passHref={true} href={"/about"}>About</Link></div>
                         <div className={"text-black text-l"}><a href="mailto:celestechanglu@gmail.com">Contact</a></div>
                     </div>
                 </div>
