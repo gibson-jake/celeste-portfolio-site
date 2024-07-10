@@ -10,35 +10,33 @@ import persona1 from '/public/images/ielcPage/persona1.svg';
 import persona2 from '/public/images/ielcPage/persona2.svg';
 import informationArchitecture from '/public/images/ielcPage/informationArchitecture.svg';
 import ielcLogoCreation from '/public/images/ielcPage/ielcLogoCreation.svg';
+import ielcLogoCreationLarge from '/public/images/ielcPage/ielcLogoCreationLarge.svg';
 import ielcLogoSamples from '/public/images/ielcPage/ielcLogoSamples.svg';
 import colors from '/public/images/ielcPage/colors.svg';
 import headings from '/public/images/ielcPage/headings.svg';
 import designBoard1 from '/public/images/ielcPage/designBoard1.svg';
 import designBoard2 from '/public/images/ielcPage/designBoard2.svg';
 import taskFlow from '/public/images/ielcPage/taskFlow.svg';
-import phoneOld from '/public/images/ielcPage/PhoneOld.svg';
-import phoneNew from '/public/images/ielcPage/phoneNew.svg';
 import oldIssues from '/public/images/ielcPage/oldIssues.svg';
 import newImprovements from '/public/images/ielcPage/newImprovements.svg';
 import applicationIncrease from '/public/images/ielcPage/applicationIncrease.svg';
-import desktopFinal from '/public/images/ielcPage/desktopFinal.svg';
 import Title from "../../components/Title";
 import React from "react";
 import WrittenSection from "@/components/WrittenSection";
 import Bold from "@/components/Bold";
-import SmallHeading from "@/components/SmallHeading";
 import MoreToExplore from "@/components/MoreToExplore";
+import HiddenBreaks from "@/components/HiddenBreaks";
 
 export default function Ielc() {
     return (
         <main className={"bg-white flex flex-col"}>
-            <div className={"mx-[10%] md:mx-[15%]"}>
+            <div className={"mx-[10%] md:mx-[15%] 2xl:mx-[25%]"}>
                 <Navbar/>
                 <div className={"mt-40"}>
                     <Title title={"Interactive Elementary Learning Center"}
                            subtitle={"WEBSITE DESIGN・DESKTOP・MOBILE"}/>
                     <Image
-                        className={"items-center w-full"}
+                        className={"items-center w-full max-w-4xl m-auto"}
                         src={cover}
                         alt=""
                     />
@@ -47,11 +45,13 @@ export default function Ielc() {
                         content={<>
                             My team created a user-friendly website for the Interactive Elementary Learning Center
                             (IELC), a new non-profit organization dedicated to providing free summer tutoring for
-                            students in grades 1-5 in Davis and Sacramento. <Bold text={"We created a mobile and online platform" +
-                            "where all student and tutor registrations are handled directly on our website."}/>
+                            students in grades 1-5 in Davis and Sacramento. <Bold
+                            text={"We created a mobile and online platform" +
+                                "where all student and tutor registrations are handled directly on our website."}/>
                         </>}
                     />
-                    <div>
+                    <div
+                        className={"md:flex md:*:max-w-[50%] md:flex-wrap lg:flex-nowrap lg:flex-row md:place-content-between *:w-auto lg:*:max-w-[33%] xl:*:max-w-[45%]"}>
                         <WrittenSection
                             header={"MY ROLE"}
                             content={<>
@@ -63,7 +63,7 @@ export default function Ielc() {
                         <WrittenSection
                             header={"TIMELINE"}
                             content={<>
-                                February -- March 2023;<br/>
+                                February — March 2023;<br/>
                                 Launch in April 2023
                             </>}
                         />
@@ -75,7 +75,7 @@ export default function Ielc() {
                         />
                     </div>
                     <Image
-                        className={""}
+                        className={"m-auto"}
                         src={sample}
                         alt=""
                     />
@@ -84,17 +84,19 @@ export default function Ielc() {
                         content={<>
                             IELC is a brand-new tutoring company aiming to improve access to free summer tutoring for
                             elementary students. However, they lacked a platform to streamline student and tutor
-                            sign-ups
-                            and showcase their services. To tackle this, I created a problem statement: <br/><br/>
-                            <Bold text={`"How can we design a website that establishes credibility, reliability,
-                            professionalism, while also serving as the primary application platform?"`}/> <br/><br/>
+                            sign and showcase their services. To tackle this, I created a problem
+                            statement: <HiddenBreaks/>
+                            <Bold text={` "How can we design a website that establishes credibility, reliability,
+                            professionalism, while also serving as the primary application platform?" `}/>
+                            <HiddenBreaks/>
                             Let's break it down!
                         </>}
                     />
-                    <div>
-
+                    <WrittenSection
+                        header={"BREAKDOWN OF THE CHALLENGE"}
+                    />
+                    <div className={"md:flex md:*:w-[45%] md:place-content-between md:flex-wrap"}>
                         <WrittenSection
-                            header={"BREAKDOWN OF THE CHALLENGE"}
                             title={"Building Brand Identity from Scratch 🌱"}
                             content={<>
                                 I need to build a brand identity from scratch, despite limited resources and the lack
@@ -102,6 +104,7 @@ export default function Ielc() {
                             </>}
                         />
                         <WrittenSection
+                            header={``}
                             title={"Mission and Goals 🚀"}
                             content={<>
                                 I want to ensure that the project aligns with and highlights the core mission and goals
@@ -116,6 +119,7 @@ export default function Ielc() {
                             </>}
                         />
                     </div>
+                    <hr className="bg-rose-100 h-7 my-4"/>
                     <WrittenSection
                         header={"PROJECTED TIMELINE"}
                         title={"Planning for Success"}
@@ -126,7 +130,7 @@ export default function Ielc() {
                         </>}
                     />
                     <Image
-                        className={""}
+                        className={"m-auto"}
                         src={timeline}
                         alt=""
                     />
@@ -139,7 +143,7 @@ export default function Ielc() {
                         </>}
                     />
                     <Image
-                        className={""}
+                        className={"m-auto"}
                         src={designProcess}
                         alt=""
                     />
@@ -151,13 +155,14 @@ export default function Ielc() {
                             "user personas, an information architecture, and mapping out task flows. This active engagement" +
                             "helped me empathize with our client and potential users."}
                     />
-                    <div>
+                    <div className={"lg:flex lg:flex-row"}>
                         <Image
-                            className={""}
+                            className={"justify-center w-full lg:w-1/2"}
                             src={competitiveAnalysis}
                             alt=""
                         />
                         <WrittenSection
+                            className={"place-content-center"}
                             content={"For the analysis, I decided to explore other tutoring and summer camp websites targeting" +
                                 "a similar audience. My main research areas were: what makes the company uniquely valuable," +
                                 "and aspects where their website excelled or not."}
@@ -172,12 +177,12 @@ export default function Ielc() {
                         header={"DEEP DIVE ON POTENTIAL USERS"}
                         title={"Tailoring to User Desires & Anticipations"}
                         content={"In this stage, I have learned the importance of empathizing with my users. Focusing on" +
-                            "two primary user groups-- prospective tutors and parents seeking tutoring for their children-" +
+                            "two primary user groups— prospective tutors and parents seeking tutoring for their children-" +
                             "I gained insights into their needs. Both groups prioritize clarity and straightforward language," +
                             "preferring well-organized information and ample white space to build trust in my company and website." +
                             "This understanding shaped my design decisions to meet their needs."}
                     />
-                    <div className={"py-4"}>
+                    <div className={"py-4 lg:flex lg:flex-row lg:flex-wrap *:m-auto *:w-auto"}>
                         <Image
                             className={""}
                             src={persona1}
@@ -198,7 +203,7 @@ export default function Ielc() {
                             "and ensuring the site's effectiveness. It reinforced the significance of user-centric design" +
                             "for seamless navigation."}
                     />
-                    <div className={"py-4"}>
+                    <div className={"py-4 lg:flex lg:flex-row lg:flex-wrap *:m-auto *:w-auto"}>
                         <Image
                             className={"pb-6"}
                             src={informationArchitecture}
@@ -216,12 +221,17 @@ export default function Ielc() {
                         title={"Creating a Brand Identity from Scratch"}
                         content={"After analyzing competitors, it was evident that a strong brand identity is crucial" +
                             "for each website's credibility. Therefore, I aimed to strike a balance by using colorful" +
-                            "and inviting images to create an identity that revolves around education without veering too" +
-                            "close to being child-like"}
+                            "and inviting images to create an identity that revolves around education without veering too " +
+                            "close to being child-like."}
                     />
                     <Image
-                        className={"mb-6"}
+                        className={"lg:hidden mb-6 w-auto m-auto"}
                         src={ielcLogoCreation}
+                        alt=""
+                    />
+                    <Image
+                        className={"hidden lg:block mb-6 w-auto m-auto"}
+                        src={ielcLogoCreationLarge}
                         alt=""
                     />
                     <WrittenSection
@@ -229,16 +239,18 @@ export default function Ielc() {
                         title={"Perfecting Visual Identity Iteratively"}
                         content={<>
                             When creating the brand identity, I refined over 15 logo options until finding the perfect
-                            match, keeping the client updated throughout the process. <br/><br/> I also crafted mood
-                            boards anad implemented a cohesive design system encompassing colors, fonts, and more. <br/>
-                            <br/> Prioritizing accessibility, I ensured our design was easily comprehensible, meeting
+                            match, keeping the client updated throughout the process. <HiddenBreaks/> I also crafted
+                            mood
+                            boards anad implemented a cohesive design system encompassing colors, fonts, and
+                            more. <HiddenBreaks/>
+                            Prioritizing accessibility, I ensured our design was easily comprehensible, meeting
                             the
                             needs of our users who prefer clear language, easily readable text, and colors that are easy
                             on the eyes.
                         </>}
                     />
                     <Image
-                        className={"py-5"}
+                        className={"py-5 m-auto"}
                         src={ielcLogoSamples}
                         alt=""
                     />
@@ -246,26 +258,26 @@ export default function Ielc() {
                         header={"DESIGN SYSTEM AND LIBRARIES"}
                         title={"Developing a Unified and Unique Design System"}
                     />
-                    <div>
+                    <div className={"flex gap-5 *:mb-4 m-auto justify-center md:flex-row flex-wrap md:flex-nowrap"}>
                         <Image
-                            className={"py-2"}
+                            className={""}
                             src={colors}
                             alt=""
                         />
                         <Image
-                            className={"py-2"}
+                            className={""}
                             src={headings}
                             alt=""
                         />
                     </div>
-                    <div>
+                    <div className={"flex gap-4 flex-wrap justify-center md:flex-row md:flex-nowrap"}>
                         <Image
-                            className={"py-2"}
+                            className={""}
                             src={designBoard1}
                             alt=""
                         />
                         <Image
-                            className={"py-2"}
+                            className={"mb-auto"}
                             src={designBoard2}
                             alt=""
                         />
@@ -277,50 +289,75 @@ export default function Ielc() {
                         content={<>
                             This homepage serves as a prime example of my iterative approach across every page of the
                             project. Through continuous testing and refinement, I've come to appreciate the importance
-                            of iteration in creating a user-focused design. <br/><br/>Every little tweak, whether it's
+                            of iteration in creating a user-focused design. <HiddenBreaks/> Every little tweak, whether
+                            it's
                             based on peer feedback, my own analysis, or A/B testing, has played a vital role in making
                             the user experience better and more engaging.
                         </>}
                     />
                     <WrittenSection
+                        className={"md:*:hidden"}
                         header={"INITIAL HOMEPAGE PROTOTYPE"}
                     />
-                    <div>
-                        <Image
-                            className={""}
-                            src={phoneOld}
-                            alt=""
+                    <div
+                        className={"flex gap-5 *:mb-4 m-auto justify-center md:flex-row flex-wrap md:flex-nowrap *:overflow-auto pb-8"}>
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            className={"md:max-w-[50%] max-h-[70vh]"}
+                            src={"/videos/PhoneOld.mp4"}
                         />
-                        <Image
-                            className={""}
-                            src={oldIssues}
-                            alt=""
-                        />
+
+                        <div>
+                            <WrittenSection
+                                className={"hidden md:block pb-8"}
+                                header={"INITIAL HOMEPAGE PROTOTYPE"}
+                            />
+                            <Image
+                                className={"overflow-auto"}
+                                src={oldIssues}
+                                alt=""
+                            />
+                        </div>
                     </div>
                     <WrittenSection
+                        className={"md:hidden"}
                         header={"FINAL HOMEPAGE PROTOTYPE"}
                     />
-                    <div>
-                        <Image
-                            className={""}
-                            src={phoneNew}
-                            alt=""
+                    <div
+                        className={"flex gap-5 *:mb-4 m-auto justify-center md:flex-row flex-wrap md:flex-nowrap *:overflow-auto"}>
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            className={"md:max-w-[50%] max-h-[70vh]"}
+                            src={"/videos/PhoneNew.mp4"}
                         />
-                        <Image
-                            className={""}
-                            src={newImprovements}
-                            alt=""
-                        />
+
+                        <div>
+                            <WrittenSection
+                                className={"hidden md:block pb-8"}
+                                header={"FINAL HOMEPAGE PROTOTYPE"}
+                            />
+                            <Image
+                                className={""}
+                                src={newImprovements}
+                                alt=""
+                            />
+                        </div>
                     </div>
                     <hr className="bg-rose-100 h-7 my-8"/>
                     <WrittenSection
                         header={"STAGE 4 - FINAL PROTOTYPE"}
                         title={"Revealing the Final Design"}
                     />
-                    <Image
-                        className={"pb-6"}
-                        src={desktopFinal}
-                        alt=""
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        className={"max-h-[70vh] m-auto pb-6"}
+                        src={"/videos/DesktopFinal.mp4"}
                     />
                     <WrittenSection
                         header={"PRODUCT RESULTS"}
@@ -328,8 +365,9 @@ export default function Ielc() {
                         content={<>
                             As we approach the end of the design journey, it's time to look back and see how well the
                             product has met its goals. The website and brand identity for IELC have been a hit, with a
-                            noticeable increase in applications since its launch. <br/><br/>In just the first month, we
-                            received 42 applications-- an impressive 320% increase! Now, the site serves as a go-to
+                            noticeable increase in applications since its launch. <HiddenBreaks/> In just the first
+                            month, we
+                            received 42 applications— an impressive 320% increase! Now, the site serves as a go-to
                             application portal, seamlessly bringing together all previous platforms. This not only
                             boosted
                             applications and engagement but also solidified the company's reputation for reliability
@@ -337,7 +375,7 @@ export default function Ielc() {
                         </>}
                     />
                     <Image
-                        className={""}
+                        className={"m-auto"}
                         src={applicationIncrease}
                         alt=""
                     />
@@ -348,10 +386,15 @@ export default function Ielc() {
                         content={<>
                             Looking back on this project, I've realized just how crucial it is to adapt and customize my
                             product to fit both my client's needs and the expectations of our users. By putting
-                            functionality first and creating a strong brand identity, I was able to find success in the business
-                            world. <br/><br/>Along the way, I also learned a lot about the iterative process of design and how
-                            important it is to keep refining and improving. <br/><br/> Overall, this experience has given me a
-                            deeper understanding of how every design element plays a role in shaping the final outcome of a
+                            functionality first and creating a strong brand identity, I was able to find success in the
+                            business
+                            world. <HiddenBreaks/> Along the way, I also learned a lot about the iterative process of
+                            design
+                            and how
+                            important it is to keep refining and improving. <HiddenBreaks/> Overall, this experience has
+                            given me a
+                            deeper understanding of how every design element plays a role in shaping the final outcome
+                            of a
                             project.
                         </>}
                     />
@@ -365,7 +408,8 @@ export default function Ielc() {
                             use
                             the platform. One example would be incorporating a dark mode for the site to cater to
                             varying
-                            needs and preferences.<br/><br/>Additionally, I plan to amplify the voices of parents whose
+                            needs and preferences. <HiddenBreaks/> Additionally, I plan to amplify the voices of parents
+                            whose
                             children have benefited from the program by sharing their real-life stories. These updates
                             are
                             all about ensuring the site continues to evolve and meet the needs of our users, solidifying

@@ -3,9 +3,9 @@ import SmallHeading from "@/components/SmallHeading";
 import TextContent from "@/components/TextContent";
 import Bold from "@/components/Bold";
 
-const WrittenSection = ({header, title, content}) => {
+const WrittenSection = ({header, title, content, className}) => {
     return (
-        <div className="w-full flex flex-col pb-4">
+        <div className={`${className} w-full flex flex-col pb-4`}>
             <SmallHeading text={header} styles={header ? "pt-6 pb-4" : ""} />
             <Bold text={title} styles={title ? "py-2" : ""}/>
             <TextContent text={content} styles={content ? "py-2" : ""}/>
