@@ -81,6 +81,7 @@ export default function Home() {
                 tags={"WEBSITE REDESIGN・DESKTOP・MOBILE"}
                 callToAction={"Explore Project"}
                 imageSource={gdscCover}
+                link={"/gdsc"}
             />
             <ProjectPreview
                 title={"The Interactive Elementary Learning Center "}

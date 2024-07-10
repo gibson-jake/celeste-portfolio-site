@@ -420,10 +420,7 @@ export default function Ielc() {
                     <WrittenSection
                         content={<>
                             This project is extra special to me because it's my first time working with a real client.
-                            Thank you for joining me on this design journey! :) Please contact me at
-                            <a className={"underline"}
-                               href="mailto:celestechanglu@gmail.com"> celestechanglu@gmail.com </a>
-                            if you have any questions or would love to learn more!
+                            Thank you for joining me on this design journey! :) Please contact me at <a className={"underline"} href="mailto:celestechanglu@gmail.com">celestechanglu@gmail.com</a> if you have any questions or would love to learn more!
                         </>}
                     />
                     <MoreToExplore/>
