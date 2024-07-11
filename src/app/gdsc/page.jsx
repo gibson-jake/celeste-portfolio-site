@@ -61,7 +61,7 @@ export default function Ielc() {
                         </>}
                     />
                     <div
-                        className={"md:flex md:*:max-w-[50%] md:flex-wrap lg:flex-nowrap lg:flex-row md:place-content-between *:w-auto lg:*:max-w-[33%] xl:*:max-w-[45%]"}>
+                        className={"md:flex md:*:max-w-[30%] md:flex-wrap lg:flex-nowrap lg:flex-row md:place-content-between *:w-auto lg:*:max-w-[33%] xl:*:max-w-[30%]"}>
                         <WrittenSection
                             header={"MY ROLE"}
                             content={<>
@@ -79,7 +79,7 @@ export default function Ielc() {
                         <WrittenSection
                             header={"TOOLS"}
                             content={<>
-                                Figma, Slack, Notion, Firebase
+                                Figma, Slack,<br/> Notion, Firebase
                             </>}
                         />
                     </div>
@@ -122,10 +122,9 @@ export default function Ielc() {
                     <WrittenSection
                         header={"HOW MIGHT WE STATEMENT"}
                     />
-                    <div className={"border-2 border-blue-500 border-opacity-70 shadow-md p-9 mb-14"}>
-                        <WrittenSection
-                            className={"text-center"}
-                            content={<>
+                    <div className={"border-2 border-blue-500 border-opacity-70 shadow-md p-9 mb-14 text-center"}>
+                        <TextContent
+                            text={<>
                                 “How can I design a user-friendly GDSC website that clearly communicates our club’s
                                 offerings,
                                 makes it easy to join and attend events, and answers common questions to reduce
@@ -137,7 +136,7 @@ export default function Ielc() {
                     <hr className="bg-blue-300 opacity-50 h-7 my-4"/>
                     <WrittenSection
                         header={"STAGE 1 - USER RESEARCH"}
-                        title={"Understanding my Audience"}
+                        title={"Gathering User Feedback"}
                         content={<>
                             To better understand my audience, I interviewed over 25 people, including regular club
                             members, leadership team members, and those who don't know about GDSC. I asked them what
@@ -147,7 +146,7 @@ export default function Ielc() {
                         </>}
                     />
                     <div
-                        className={"md:flex md:*:w-[45%] md:place-content-between md:flex-wrap *:border-2 *:border-opacity-70 *:shadow-md *:p-8 *:rounded-2xl my-3 *:my-8"}>
+                        className={"lg:flex lg:*:w-[45%] lg:place-content-between lg:flex-wrap *:border-2 *:border-opacity-70 *:shadow-md *:p-8 *:rounded-2xl my-3 *:my-8"}>
                         <div>
                             <TextContent
                                 text={<>
@@ -179,6 +178,14 @@ export default function Ielc() {
                     />
                     <div className={"border-2 shadow-md rounded-2xl md:p-4 lg:p-14"}>
                         <div className={""}>
+                            <div className={"flex flex-row *:m-4 m-auto"}>
+                                <Image
+                                    className={""}
+                                    src={painPoint}
+                                    alt=""
+                                />
+                                <TextContent text={"Lack of informational pages- cohort, contact us, sign up, etc."}/>
+                            </div>
                             <div className={"flex flex-row *:m-4 m-auto"}>
                                 <Image
                                     className={""}
@@ -255,7 +262,7 @@ export default function Ielc() {
                         loop
                         muted
                         className={"max-h-[70vh] m-auto"}
-                        src={"/videos/gdscPage/homePage.mp4"}
+                        src={"/videos/gdscPage/homepage.mp4"}
                     />
                     <WrittenSection
                         className={"mt-10"}
@@ -307,22 +314,24 @@ export default function Ielc() {
                         title={"Information Overload"}
                         content={`The next page under review was the “Join” page, which had proven to be somewhat misleading. It provided information about both the club and a tech lead program. To improve clarity, I recommended renaming it and dividing it into two separate pages: “About Us” and “Apply.” This segmentation will help users find the information they need  more easily. Shall we analyze this page together now?`}
                     />
-                    <Image
-                        className={"mb-6 w-auto m-auto hidden md:block"}
-                        src={joinBefore}
-                        alt=""
-                    />
-                    <div className={"md:hidden"}>
+                    <div className={"pt-4"}>
                         <Image
-                            className={"mb-6 w-auto m-auto"}
-                            src={joinBeforeSmall}
+                            className={"mb-6 w-auto m-auto hidden md:block"}
+                            src={joinBefore}
                             alt=""
                         />
-                        <Image
-                            className={"mb-6 w-auto m-auto"}
-                            src={joinBeforeDescription}
-                            alt=""
-                        />
+                        <div className={"md:hidden"}>
+                            <Image
+                                className={"mb-6 w-auto m-auto"}
+                                src={joinBeforeSmall}
+                                alt=""
+                            />
+                            <Image
+                                className={"mb-6 w-auto m-auto"}
+                                src={joinBeforeDescription}
+                                alt=""
+                            />
+                        </div>
                     </div>
                     <WrittenSection
                         header={"WEBPAGE 2 - ABOUT US & APPLY (REDESIGNED)"}
@@ -404,7 +413,7 @@ export default function Ielc() {
                         src={"/videos/gdscPage/projects.mp4"}
                     />
                     <WrittenSection
-                        title={"Fixing Overflow with Horizontal Scrolling"}
+                        title={"Project Page Enhancements"}
                     />
                     <div className={"border-2 shadow-md rounded-2xl p-4 lg:p-14"}>
                         <div className={""}>
@@ -454,47 +463,51 @@ export default function Ielc() {
                         autoPlay
                         loop
                         muted
-                        className={"max-h-[70vh] m-auto pb-6"}
+                        className={"max-h-[70vh] m-auto my-6"}
                         src={"/videos/gdscPage/upcomingEvents.mp4"}
                     />
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        className={"max-h-[70vh] pb-6"}
-                        src={"/videos/gdscPage/mobile.mp4"}
-                    />
-                    <WrittenSection
-                        title={"Project Page Enhancements"}
-                    />
-                    <div className={"border-2 shadow-md rounded-2xl p-4 lg:p-14"}>
-                        <div className={""}>
-                            <div className={"flex flex-row *:m-4 m-auto"}>
-                                <Image
-                                    className={""}
-                                    src={solution}
-                                    alt=""
-                                />
-                                <TextContent
-                                    text={`Relocated the project type headings (AI/ML, App Dev) to the top of each section to organize all projects into their respective categories.`}/>
-                            </div>
-                            <div className={"flex flex-row *:m-4"}>
-                                <Image
-                                    className={""}
-                                    src={solution}
-                                    alt=""
-                                />
-                                <TextContent
-                                    text={`Updated information cards to align with Google's brand colors and font. Added a “Learn More” button to direct users to a detailed project page.`}/>
-                            </div>
-                            <div className={"flex flex-row *:m-4"}>
-                                <Image
-                                    className={""}
-                                    src={solution}
-                                    alt=""
-                                />
-                                <TextContent
-                                    text={`Implemented horizontal scrolling for each set of cards to reduce scrolling time and prevent visual clutter by increasing white space.`}/>
+                    <div className={"lg:flex lg:flex-row lg:gap-8 mt-16"}>
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            className={"max-h-[70vh] pb-6 m-auto w-1/2"}
+                            src={"/videos/gdscPage/mobile.mp4"}
+                        />
+                        <div>
+                            <WrittenSection
+                                title={"Mobile Design Decisions"}
+                            />
+                            <div className={"border-2 shadow-md rounded-2xl p-4 xl:p-14"}>
+                                <div className={""}>
+                                    <div className={"flex flex-row *:m-4 m-auto"}>
+                                        <Image
+                                            className={""}
+                                            src={solution}
+                                            alt=""
+                                        />
+                                        <TextContent
+                                            text={`I designed a mobile version of the website to ensure a responsive design. I learned that having different versions is essential for user accessibility.`}/>
+                                    </div>
+                                    <div className={"flex flex-row *:m-4"}>
+                                        <Image
+                                            className={""}
+                                            src={solution}
+                                            alt=""
+                                        />
+                                        <TextContent
+                                            text={`All buttons are designed to be noticeable and guide user actions, with the “Apply Here” button on the “Join Us” page always easily accessible.`}/>
+                                    </div>
+                                    <div className={"flex flex-row *:m-4"}>
+                                        <Image
+                                            className={""}
+                                            src={solution}
+                                            alt=""
+                                        />
+                                        <TextContent
+                                            text={`Lastly, I focused on creating a positive user experience with thoughtful designs: clear buttons, intuitive UI, and more.`}/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -510,12 +523,12 @@ export default function Ielc() {
                             iterative design process!
                         </>}
                     />
-                    <div className={"flex flex-wrap gap-4 text-center md:flex-nowrap"}>
+                    <div className={"flex flex-wrap gap-4 *:gap4 text-center md:flex-nowrap"}>
                         <div className={"flex flex-row "}>
                             <div className={"max-h-[50vh]"}>
                                 <SmallHeading text={"INITIAL DESIGN"}/>
                                 <Image
-                                    className={""}
+                                    className={"pt-4 "}
                                     src={initialDesign}
                                     alt=""
                                 />
@@ -523,7 +536,7 @@ export default function Ielc() {
                             <div>
                                 <SmallHeading text={"SECOND DESIGN"}/>
                                 <Image
-                                    className={""}
+                                    className={"pt-4 " }
                                     src={secondDesign}
                                     alt=""
                                 />
@@ -533,7 +546,7 @@ export default function Ielc() {
                             <div>
                                 <SmallHeading text={"THIRD DESIGN"}/>
                                 <Image
-                                    className={""}
+                                    className={"pt-4 "}
                                     src={thirdDesign}
                                     alt=""
                                 />
@@ -541,67 +554,75 @@ export default function Ielc() {
                             <div>
                                 <SmallHeading text={"FINAL DESIGN"}/>
                                 <Image
-                                    className={""}
+                                    className={"pt-4 "}
                                     src={finalDesign}
                                     alt=""
                                 />
                             </div>
                         </div>
                     </div>
-                    <WrittenSection
-                        title={"First Few Iterations"}
-                    />
-                    <div className={"border-2 shadow-md rounded-2xl p-4 lg:p-14"}>
-                        <div className={""}>
-                            <div className={"flex flex-row *:m-4 m-auto"}>
-                                <Image
-                                    className={""}
-                                    src={painPoint}
-                                    alt=""
-                                />
-                                <TextContent
-                                    text={<> <Bold text={"Lack of Color:"}/> Information dividers were dull, and cohort
-                                        emotes were not eye-catching.</>}/>
-                            </div>
-                            <div className={"flex flex-row *:m-4"}>
-                                <Image
-                                    className={""}
-                                    src={painPoint}
-                                    alt=""
-                                />
-                                <TextContent
-                                    text={<> <Bold text={"Typography Issues:"}/> Overly bold text failed to highlight
-                                        key information. I improved visual hierarchy by decreasing text size and
-                                        increasing header sizes.</>}/>
+                    <div className={"xl:flex xl:flex-row xl:gap-6 xl:*:w-1/2 max-h-min"}>
+                        <div className={"flex flex-col"}>
+                            <WrittenSection
+                                className={"pt-7"}
+                                title={"First Few Iterations"}
+                            />
+                            <div className={"border-2 shadow-md rounded-2xl p-4 lg:p-14 h-full"}>
+                                <div>
+                                    <div className={"flex flex-row *:m-4 m-auto"}>
+                                        <Image
+                                            className={""}
+                                            src={painPoint}
+                                            alt=""
+                                        />
+                                        <TextContent
+                                            text={<> <Bold text={"Lack of Color:"}/> Information dividers were dull, and cohort
+                                                emotes were not eye-catching.</>}/>
+                                    </div>
+                                    <div className={"flex flex-row *:m-4"}>
+                                        <Image
+                                            className={""}
+                                            src={painPoint}
+                                            alt=""
+                                        />
+                                        <TextContent
+                                            text={<> <Bold text={"Typography Issues:"}/> Overly bold text failed to highlight
+                                                key information. I improved visual hierarchy by decreasing text size and
+                                                increasing header sizes.</>}/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <WrittenSection
-                        title={"Finished Design"}
-                    />
-                    <div className={"border-2 shadow-md rounded-2xl p-4 lg:p-14"}>
-                        <div className={""}>
-                            <div className={"flex flex-row *:m-4 m-auto"}>
-                                <Image
-                                    className={""}
-                                    src={solution}
-                                    alt=""
-                                />
-                                <TextContent
-                                    text={<> <Bold text={"Apply Here Button:"}/> Thorough A/B testing showed that having
-                                        an always-accessible “Apply Here” button guides user actions more effectively
-                                        and simplifies the process.</>}/>
-                            </div>
-                            <div className={"flex flex-row *:m-4"}>
-                                <Image
-                                    className={""}
-                                    src={solution}
-                                    alt=""
-                                />
-                                <TextContent
-                                    text={<> <Bold text={"Clear UI:"}/> The typography layout now highlights the most
-                                        important information. Additionally, each card is clearly separated from the
-                                        others.</>}/>
+                        <div className={"flex flex-col"}>
+                            <WrittenSection
+                                className={"pt-7"}
+                                title={"Finished Design"}
+                            />
+                            <div className={"border-2 shadow-md rounded-2xl p-4 lg:p-14 h-full"}>
+                                <div>
+                                    <div className={"flex flex-row *:m-4 m-auto"}>
+                                        <Image
+                                            className={""}
+                                            src={solution}
+                                            alt=""
+                                        />
+                                        <TextContent
+                                            text={<> <Bold text={"Apply Here Button:"}/> Thorough A/B testing showed that having
+                                                an always-accessible “Apply Here” button guides user actions more effectively
+                                                and simplifies the process.</>}/>
+                                    </div>
+                                    <div className={"flex flex-row *:m-4"}>
+                                        <Image
+                                            className={""}
+                                            src={solution}
+                                            alt=""
+                                        />
+                                        <TextContent
+                                            text={<> <Bold text={"Clear UI:"}/> The typography layout now highlights the most
+                                                important information. Additionally, each card is clearly separated from the
+                                                others.</>}/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -617,8 +638,8 @@ export default function Ielc() {
                             reaching larger goals. Ongoing learning allows me to create better designs for users. I
                             stayed focused on my end goal: crafting meaningful and useful designs. Every detail, from
                             buttons to font sizes, is tailored to the audience—it's all about user-focused design. I've
-                            learned to identify what works and what doesn't, and the best part is that the learning is
-                            continuous. </>}
+                            learned to identify what works and what doesn't, and <Bold text={"the best part is that the learning is continuous."}/> 
+                        </>}
                     />
                     <hr className="bg-blue-300 opacity-50 h-7 my-10"/>
                     <WrittenSection

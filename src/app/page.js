@@ -95,7 +95,7 @@ export default function Home() {
                 title={"The Kool Hair Studio"}
                 description={"I designed The Kool Hair Studio’s logo and brand identity, meticulously creating all their visual assets."}
                 tags={"LOGO & BRAND DESIGN"}
-                callToAction={"Explore Project"}
+                callToAction={"Writeup Coming Soon"}
                 imageSource={tkhsCover}
             />
           </div>
