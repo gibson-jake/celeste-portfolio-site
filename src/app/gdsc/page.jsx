@@ -15,10 +15,10 @@ import joinBefore from '/public/images/gdscPage/joinBefore.svg';
 import projectBeforeSmall from '/public/images/gdscPage/projectBeforeSmall.png';
 import projectBeforeDescription from '/public/images/gdscPage/projectBeforeDescription.svg';
 import projectBefore from '/public/images/gdscPage/projectBefore.svg';
-import initialDesign from '/public/images/gdscPage/initialDesign.png';
-import secondDesign from '/public/images/gdscPage/secondDesign.png';
-import thirdDesign from '/public/images/gdscPage/thirdDesign.png';
-import finalDesign from '/public/images/gdscPage/finalDesign.png';
+import initialDesign from '/public/images/gdscPage/initialDesign.svg';
+import secondDesign from '/public/images/gdscPage/secondDesign.svg';
+import thirdDesign from '/public/images/gdscPage/thirdDesign.svg';
+import finalDesign from '/public/images/gdscPage/finalDesign.svg';
 import Title from "../../components/Title";
 import React from "react";
 import WrittenSection from "@/components/WrittenSection";
@@ -524,8 +524,8 @@ export default function Ielc() {
                         </>}
                     />
                     <div className={"flex flex-wrap gap-4 *:gap4 text-center md:flex-nowrap"}>
-                        <div className={"flex flex-row "}>
-                            <div className={"max-h-[50vh]"}>
+                        <div className={"flex flex-row gap-4"}>
+                            <div className={"max-h-[50vh]"}> 
                                 <SmallHeading text={"INITIAL DESIGN"}/>
                                 <Image
                                     className={"pt-4 "}
@@ -542,7 +542,7 @@ export default function Ielc() {
                                 />
                             </div>
                         </div>
-                        <div className={"flex flex-row *:*:m-auto"}>
+                        <div className={"flex flex-row *:*:m-auto gap-4"}>
                             <div>
                                 <SmallHeading text={"THIRD DESIGN"}/>
                                 <Image

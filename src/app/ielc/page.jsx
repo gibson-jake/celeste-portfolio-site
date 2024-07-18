@@ -46,7 +46,7 @@ export default function Ielc() {
                             My team created a user-friendly website for the Interactive Elementary Learning Center
                             (IELC), a new non-profit organization dedicated to providing free summer tutoring for
                             students in grades 1-5 in Davis and Sacramento. <Bold
-                            text={"We created a mobile and online platform" +
+                            text={"We created a mobile and online platform " +
                                 "where all student and tutor registrations are handled directly on our website."}/>
                         </>}
                     />
@@ -139,7 +139,7 @@ export default function Ielc() {
                         title={"Designing All Starts with a Blueprint"}
                         content={<>
                             I've also learned that an essential step before designing is to outline my design process.
-                            Breaking down each stage helps to strengthen my workflow an ensure a thorough approach
+                            Breaking down each stage helps to strengthen my workflow an ensure a thorough approach.
                         </>}
                     />
                     <Image
@@ -151,9 +151,9 @@ export default function Ielc() {
                     <WrittenSection
                         header={"STAGE 1 - USER RESEARCH"}
                         title={"Understanding my Audience"}
-                        content={"I started the project by diving into research, conducting a competitive analysis, creating" +
-                            "user personas, an information architecture, and mapping out task flows. This active engagement" +
-                            "helped me empathize with our client and potential users."}
+                        content={"I started the project by diving into research, conducting a competitive analysis, creating " +
+                            " user personas, an information architecture, and mapping out task flows. This active engagement " +
+                            " helped me empathize with our client and potential users."}
                     />
                     <div className={"lg:flex lg:flex-row"}>
                         <Image
@@ -163,24 +163,24 @@ export default function Ielc() {
                         />
                         <WrittenSection
                             className={"place-content-center"}
-                            content={"For the analysis, I decided to explore other tutoring and summer camp websites targeting" +
-                                "a similar audience. My main research areas were: what makes the company uniquely valuable," +
-                                "and aspects where their website excelled or not."}
+                            content={"For the analysis, I decided to explore other tutoring and summer camp websites targeting " +
+                                " a similar audience. My main research areas were: what makes the company uniquely valuable, " +
+                                " and aspects where their website excelled or not."}
                         />
                     </div>
                     <WrittenSection
-                        content={"Some strengths of these websites including strong branding, building trust with testimonials," +
-                            "and effective information chunking to engage the audience without overwhelming them. I planned" +
-                            "to ensure our site incorporated these elements."}
+                        content={"Some strengths of these websites including strong branding, building trust with testimonials, " +
+                            " and effective information chunking to engage the audience without overwhelming them. I planned " +
+                            " to ensure our site incorporated these elements."}
                     />
                     <WrittenSection
                         header={"DEEP DIVE ON POTENTIAL USERS"}
                         title={"Tailoring to User Desires & Anticipations"}
-                        content={"In this stage, I have learned the importance of empathizing with my users. Focusing on" +
-                            "two primary user groups— prospective tutors and parents seeking tutoring for their children-" +
-                            "I gained insights into their needs. Both groups prioritize clarity and straightforward language," +
-                            "preferring well-organized information and ample white space to build trust in my company and website." +
-                            "This understanding shaped my design decisions to meet their needs."}
+                        content={"In this stage, I have learned the importance of empathizing with my users. Focusing on " +
+                            " two primary user groups— prospective tutors and parents seeking tutoring for their children— " +
+                            " I gained insights into their needs. Both groups prioritize clarity and straightforward language, " +
+                            " preferring well-organized information and ample white space to build trust in my company and website. " +
+                            " This understanding shaped my design decisions to meet their needs."}
                     />
                     <div className={"py-4 lg:flex lg:flex-row lg:flex-wrap *:m-auto *:w-auto"}>
                         <Image
@@ -197,11 +197,11 @@ export default function Ielc() {
                     <WrittenSection
                         header={"MAPPING THE SITE"}
                         title={"Understanding User Flows for Optimization"}
-                        content={"Building an information architecture and task flow helped me focus on key pages that address" +
-                            "user questions. It also guided me in placing CTA buttons strategically for smooth transitions to" +
-                            "more information. Analyzing task flows emphasized the importance or understanding user needs" +
-                            "and ensuring the site's effectiveness. It reinforced the significance of user-centric design" +
-                            "for seamless navigation."}
+                        content={"Building an information architecture and task flow helped me focus on key pages that address " +
+                            " user questions. It also guided me in placing CTA buttons strategically for smooth transitions to " +
+                            " more information. Analyzing task flows emphasized the importance or understanding user needs " +
+                            " and ensuring the site's effectiveness. It reinforced the significance of user-centric design " +
+                            " for seamless navigation."}
                     />
                     <div className={"py-4 lg:flex lg:flex-row lg:flex-wrap *:m-auto *:w-auto"}>
                         <Image
@@ -219,10 +219,10 @@ export default function Ielc() {
                     <WrittenSection
                         header={"STAGE 2 - BRAND DEVELOPMENT"}
                         title={"Creating a Brand Identity from Scratch"}
-                        content={"After analyzing competitors, it was evident that a strong brand identity is crucial" +
-                            "for each website's credibility. Therefore, I aimed to strike a balance by using colorful" +
-                            "and inviting images to create an identity that revolves around education without veering too " +
-                            "close to being child-like."}
+                        content={"After analyzing competitors, it was evident that a strong brand identity is crucial " +
+                            " for each website's credibility. Therefore, I aimed to strike a balance by using colorful " +
+                            " and inviting images to create an identity that revolves around education without veering too " +
+                            " close to being child-like."}
                     />
                     <Image
                         className={"lg:hidden mb-6 w-auto m-auto"}

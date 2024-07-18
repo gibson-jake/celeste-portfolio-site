@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import dotImage from '/public/images/Heart.svg';
@@ -8,14 +9,41 @@ import ielcCover from '/public/images/ielcCover.png';
 import tkhsCover from '/public/images/tkhsCover.png';
 import Footer from "../components/Footer";
 import ProjectPreview from "../components/ProjectPreview";
-import React from "react";
+// import React, {useRef, useEffect, useState} from "react";
+
+// export function useIsVisible(ref) {
+//     const [isIntersecting, setIntersecting] = useState(false);
+//
+//     useEffect(() => {
+//         const observer = new IntersectionObserver(([entry]) => {
+//                 setIntersecting(entry.isIntersecting)
+//             }
+//         );
+//
+//         observer.observe(ref.current);
+//         return () => {
+//             observer.disconnect();
+//         };
+//     }, [ref]);
+//
+//     return isIntersecting;
+// }
 
 export default function Home() {
+    //
+    // const ref1 = useRef();
+    // const isVisible1 = useIsVisible(ref1);
+    //
+    // const ref2 = useRef();
+    // const isVisible2 = useIsVisible(ref2);
+    //
+    // const ref3 = useRef();
+    // const isVisible3 = useIsVisible(ref3);
   return (
-      <main className={"bg-white flex flex-col"}>
-        <div className={"mx-[5%] md:mx-[10%]"}>
+      <main className={"bg-white flex flex-col "}>
           <Navbar/>
-          <div className="mb-36 md:mb-52 mt-52 justify-center items-center text-black text-5xl md:text-7xl font-bold leading-[52px] md:leading-[90px] ">
+        <div className={"mx-[5%] md:mx-[10%] animate-fadeIn"}>
+          <div className=" mb-36 md:mb-52 mt-52 justify-center items-center text-black text-5xl md:text-7xl font-bold leading-[52px] md:leading-[90px]">
             <div className="flex justify-center items-center">
               <span>Creative,</span>
             </div>

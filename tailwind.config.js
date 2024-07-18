@@ -25,9 +25,18 @@ module.exports = {
             opacity: '0'
           }
         },
+        'fadeIn': {
+          "0%": {
+            opacity: '0',
+          },
+          "100%": {
+            opacity: '1',
+          }
+        }
       },
       animation: {
         'heartbeat': 'heartbeat 1s cubic-bezier(0, 0, 0.2, 1) infinite',
+        'fadeIn': 'fadeIn 5s cubic-bezier(0.2, 0, 0.2, 1)',
       },
     },
   },
