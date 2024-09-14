@@ -24,11 +24,22 @@ const NavBar = () => {
         <nav className="bg-white fixed top-0 left-0 w-full z-10  ">
             <div className="py-14 px-8 lg:p-14 flex items-center justify-between lg:mx-[10%]  2xl:mx-[20%]">
                 <div className="text-black text-xl font-semibold whitespace-nowrap"><a href="/">Celeste Lu</a></div>
-                <div className="hidden lg:flex space-x-10 text-black text-xl ">
-                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}><Link passHref={true} href={"/"}>Work</Link></div>
-                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></div>
-                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}><Link passHref={true} href={"/about"}>About</Link></div>
-                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}><a href="mailto:celestechanglu@gmail.com">Contact</a></div>
+                <div className="hidden lg:flex space-x-10 text-black text-xl *: ">
+                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}>
+                        <Link passHref={true} href={"/"}>Work</Link>
+                    </div>
+                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}>
+                        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    </div>
+                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}><
+                        Link passHref={true} href={"/about"}>About</Link>
+                    </div>
+                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}>
+                        <Link passHref={true} href={"/fun"}>Fun</Link>
+                    </div>
+                    <div className={"hover:-translate-y-1.5 transition-transform duration-500"}>
+                        <a href="mailto:celestechanglu@gmail.com">Contact</a>
+                    </div>
                 </div>
                 <div className="flex lg:hidden">
                     <button
@@ -48,6 +59,7 @@ const NavBar = () => {
                     <div><Link passHref={true} href={"/"}>Work</Link></div>
                     <div><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></div>
                     <div><Link passHref={true} href={"/about"}>About</Link></div>
+                    <div><Link passHref={true} href={"/fun"}>Fun</Link></div>
                     <div><a href="mailto:celestechanglu@gmail.com">Contact</a></div>
                 </div>
             </div>
