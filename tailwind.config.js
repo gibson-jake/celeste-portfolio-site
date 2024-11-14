@@ -32,11 +32,16 @@ module.exports = {
           "100%": {
             opacity: '1',
           }
-        }
+        },
+        'slideLeft': {
+          from: { transform: 'translateX(0)'},
+          to: { transform: 'translateX(-50%)'},
+        },
       },
       animation: {
         'heartbeat': 'heartbeat 1s cubic-bezier(0, 0, 0.2, 1) infinite',
         'fadeIn': 'fadeIn 5s cubic-bezier(0.2, 0, 0.2, 1)',
+        'carouselSlide': 'slideLeft 45s linear infinite',
       },
     },
   },

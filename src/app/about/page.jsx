@@ -3,10 +3,10 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import aboutCover from '/public/images/aboutCoverImage.JPG';
 import wave from '/public/images/Wave.svg';
-import mtFuji from '/public/images/MtFuji.JPG';
 import Title from "../../components/Title";
 import React from "react";
 import WorkExperience from "../../components/WorkExperience";
+import AutoplayCarousel from "@/components/AutoplayCarousel";
 
 export default function About() {
     return (
@@ -17,61 +17,60 @@ export default function About() {
                     <div>
                         <Title
                             title={"About Celeste Lu"}
-                            subtitle={"PRODUCT DESIGNER"}
+                            subtitle={"PRODUCT DESIGNER & MATCHA LOVER"}
                         />
-                        <div className={"relative -mx-[12.5%] lg:mx-0"}>
+                        <div className={"relative -mx-[12.5%] lg:mx-0 md:hidden"}>
                             <Image
-                                className={"h-52 object-cover md:h-72 md:rounded-3xl"}
+                                className={"h-52 object-cover mb-6"}
                                 src={aboutCover}
                                 alt={"Cherry Blossom"}
                             />
                         </div>
-
-                        <span className={"flex flex-col mt-6 *:mt-4 sm:mx-[10%] lg:mx-[30%]"}>
+                        <span className={"flex flex-col pb-4 *:mt-3 lg:mx-[10%] 2xl:mx-[20%]"}>
+                            <Image
+                                className={"hidden md:block h-52 object-cover md:h-52 md:rounded-2xl mb-6"}
+                                src={aboutCover}
+                                alt={"Cherry Blossom"}
+                            />
                             <p className={"font-bold text-[20px] text-black flex flex-row"}>
                                 Hello, I'm Celeste! 
                                 <Image
                                     className={"ml-2"}
                                     src={wave}
-                                    alt={"Cherry Blossom"}
+                                    alt={"Waving Emoji"}
                                 />
                             </p>
-                            <div className={"flex flex-row *:shadow *:text-[8.5px] sm:*:text-[12px] *:font-bold *:text-white *:bg-tagColor *:rounded-2xl *:md:py-1 md:*:px-2 *:px-2 *:mx-1 *:leading-5"}>
-                                <span>
-                                    ADVOCATE
-                                </span>
-                                <span >
-                                    CONSCIENTIOUS
-                                </span>
-                                <span>
-                                    DILIGENT
-                                </span>
-                                <span>
-                                    SUPPORTIVE
-                                </span>
-                            </div>
-                            <div className={"*:text-[15px] *:pb-4 text-gray-500 mb-8"}>
+                            <div className={"*:text-[15px] *:pb-4 text-black mb-4"}>
                                 <p>
-                                    I'm a full-stack designer with a background in <span className={"font-bold"}>design and 
+                                    I'm a full-stack product designer with a background in <span
+                                    className={"font-bold"}>design and 
                                     psychology</span>, dedicated to creating designs that positively impact people and 
                                     strengthen the community around me.
                                 </p>
                                 <p>
-                                    I am an <span className={"underline"}>INFJ</span> who loves <span
-                                    className={"font-bold"}>
-                                    empathizing with others</span> and creating beautiful, effortless, and meaningful user 
-                                    experiences. I always design with intention, supporting my actions with <span
-                                    className={"font-bold"}>thorough user research.</span>
+                                    I am an <a
+                                    className={"underline"} href="https://www.16personalities.com/infj-personality"
+                                    target="_blank">INFJ</a> who loves
+                                    empathizing with others and creating beautiful, effortless, and meaningful user 
+                                    experiences. I always design with intention, supporting my actions with thorough user research.
                                 </p>
-                                <p>
-                                    In my free time, you can find me traveling, doing photography, diving into new books,
-                                    cooking, baking, playing video games, and spending time with my family and friends. I
-                                    love experiencing new and exciting things and sharing them with others!
-                                </p>
-                                <p>
-                                    <span className={"font-bold"}>Let's be friends!</span> You can find me on <a className={"underline"} href="https://www.linkedin.com/in/celestelu/" target="_blank">LinkedIn</a> or contact me
-                                    at <a className={"underline"} href="mailto:celestechanglu@gmail.com">celestechanglu@gmail.com</a> :)
-                                </p>
+                            </div>
+                                
+                            <p className={"font-bold text-[20px] text-black flex flex-row"}>
+                                What I Do For Fun!
+                            </p>
+                            <div className={"*:text-[15px] *:pb-4 text-black mb-8"}>
+                            <p>
+                                In my free time, In my free time, I love capturing life's little moments through photography. Whether I'm snapping pictures of the things that I cook to the flowers on the side of the road, I always <span
+                                className={"font-bold"}> find beauty to appreciate around me.</span> I also have a passion for traveling, diving into new books, cooking, baking, and playing video games. 
+                            </p>
+                            <p>
+                                <span className={"font-bold"}>Let's be friends!</span> You can find me on <a
+                                className={"underline"} href="https://www.linkedin.com/in/celestelu/"
+                                target="_blank">LinkedIn</a> or contact me
+                                at <a className={"underline"}
+                                      href="mailto:celestechanglu@gmail.com">celestechanglu@gmail.com</a> :)
+                            </p>
                             </div>
                         </span>
                     </div>
@@ -81,21 +80,27 @@ export default function About() {
                             subtitle={"PHOTOGRAPHY"}
                         />
 
-                        <Image
-                            className={"rounded-2xl"}
-                            src={mtFuji}
-                            alt={""}
-                        />
+                        <div className={"-mx-[12%] md:-mx-[21.4%]"}>
+                            <AutoplayCarousel/>
+                        </div>
+                        
+                        
                     </div>
                     <div>
                         <Title
                             title={"My Work Experiences"}
                         />
                         <WorkExperience
-                            startDate={"April 2024"}
-                            endDate={"Present"}
+                            startDate={"Aug 2024"}
+                            endDate={"Nov 2024"}
+                            title={"GBCS"}
+                            subtitle={"UI/UX Product Designer"}
+                        />
+                        <WorkExperience
+                            startDate={"March 2024"}
+                            endDate={"Aug 2024"}
                             title={"The Kool Hair Studio"}
-                            subtitle={"Brand & Graphic Designer"}
+                            subtitle={"Freelance Designer"}
                         />
                         <WorkExperience
                             startDate={"March 2023"}

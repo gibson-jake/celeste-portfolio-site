@@ -1,6 +1,6 @@
 ﻿import Image from "next/image";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import post1 from '/public/images/fun/Post1.svg';
 import post2 from '/public/images/fun/Post2.svg';
 import post3 from '/public/images/fun/Post3.svg';
@@ -10,7 +10,7 @@ import post6 from '/public/images/fun/Post6.svg';
 import concertPoster from '/public/images/fun/ConcertPoster.png';
 import aboveMatcha from '/public/images/fun/AboveMatchaShot.png';
 import sideMatcha from '/public/images/fun/SidewaysMatchaShot.png';
-import Title from "../../components/Title";
+import Title from "@/components/Title";
 import React from "react";
 import WrittenSection from "@/components/WrittenSection";
 import MoreToExplore from "@/components/MoreToExplore";
