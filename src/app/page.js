@@ -65,14 +65,14 @@ export default function Home() {
                         <span className="group relative inline-block">
                             i
                             <Image
-                                className={"absolute group-hover:animate-heartbeat top-0.5 md:top-2.5"}
+                                className={"absolute group-hover:animate-heartbeat top-0.5 md:top-4"}
                                 src={dotImage}
                                 alt=""
                                 width={20} // Adjust width
                                 height={20} // Adjust height
                             />
                             <Image
-                                className={"absolute top-0.5 md:top-2.5"}
+                                className={"absolute top-0.5 md:top-4"}
                                 src={dotImage}
                                 alt=""
                                 width={20} // Adjust width
