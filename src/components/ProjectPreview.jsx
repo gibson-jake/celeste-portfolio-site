@@ -1,47 +1,37 @@
 ﻿import React from "react";
 import Image from "next/image";
-import arrowIcon from "/public/images/Arrow.svg";
 
-const ProjectPreview = ({title, description, tags, callToAction, imageSource, link}) => {
+const ProjectPreview = ({styles, project}) => {
     return (
-        <div className={"sm:w-[80%] 2xl:w-1/2 mx-4 my-16 md:m-16"}>
-            <div className={"mb-6"}>
-                <div className={"flex flex-col md:flex-row gap-6"}>
-                    <div className={"flex flex-col gap-4 font-bold md:w-[45%]"}>
-                        <span className={"text-3xl text-black md:h-[75%]"}>{title}</span>
-                        <span className={"opacity-50 text-black text-[13px] tracking-widest mb-1"}>{tags}</span>
+        <div className={`${styles} flex flex-col group gap-4 py-4 text-lapis max-w-[450px] font-manrope`}>
+            <a href={project.link ? project.link : "#"}
+               onClick={(e) => !project.link && e.preventDefault()}>
+                <div className={"relative group-hover:scale-110 transition-transform ease-in-out duration-300 "}>
+                    <div className={"absolute rounded-xl inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center text-lg font-semibold transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 z-10"}>
+                        { project.link ? "Click To Learn More" : "Coming Soon!" } 
                     </div>
-                    <div className={"flex flex-col gap-8 md:w-[55%]"}>
-                        <span className={"text-black text-xl"}>{description}</span>
-                        <a className={"group hidden md:flex flex-row gap-2 align-bottom "} href={link}>
-                            <Image
-                                className={"group-hover:translate-x-1.5 transition-transform duration-500"}
-                                src={arrowIcon}
-                                alt="arrow"
-                                width={40}
-                                height={40}
-                            />
-                            <span className={" text-black text-xl font-bold leading-relaxed"}>{callToAction}</span>
-                        </a>
-                    </div>
+                    <Image
+                        className={"rounded-xl object-cover max-h-60 max-w-full z-[1]"}
+                        src={project.image}
+                        alt={project.title}
+                    />
+    
                 </div>
-            </div>
-            <a href={link}>
-                <Image
-                    className={"rounded-3xl"}
-                    src={imageSource}
-                    alt="cover"
-                />
-            </a>
-            <a className={"md:hidden flex flex-row gap-2 align-bottom pt-6"} href={link}>
-                <Image
-                    className={""}
-                    src={arrowIcon}
-                    alt="arrow"
-                    width={40}
-                    height={40}
-                />
-                <span className={" text-black text-xl font-bold leading-relaxed"}>{callToAction}</span>
+                <div className={"text-2xl font-bold pt-6"}>
+                    {project.title}
+                </div>
+                <div className={"flex flex-wrap gap-4 my-4"}>
+                    {Object.keys(project.tags).map((key) => {
+                        return (
+                            <div key={key} className={"bg-sand rounded-full px-3 py-0.5 font-bold text-lg"}>
+                                {project.tags[key]}
+                            </div>
+                        );
+                    })}
+                </div>
+                <div className={"font-medium"}>
+                    {project.description}
+                </div>
             </a>
         </div>
     )

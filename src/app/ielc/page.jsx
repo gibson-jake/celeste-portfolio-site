@@ -1,6 +1,4 @@
 ﻿import Image from "next/image";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import cover from '/public/images/ielcPage/cover.svg';
 import sample from '/public/images/ielcPage/sample.png';
 import timeline from '/public/images/ielcPage/timeline.png';
@@ -31,7 +29,6 @@ export default function Ielc() {
     return (
         <main className={"bg-white flex flex-col"}>
             <div className={"mx-[10%] md:mx-[15%] 2xl:mx-[25%]"}>
-                <Navbar/>
                 <div className={"mt-40"}>
                     <Title title={"Interactive Elementary Learning Center"}
                            subtitle={"WEBSITE DESIGN・DESKTOP・MOBILE"}/>
@@ -425,7 +422,6 @@ export default function Ielc() {
                     />
                     <MoreToExplore/>
                 </div>
-                <Footer/>
             </div>
 
         </main>

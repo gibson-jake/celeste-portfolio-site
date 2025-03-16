@@ -14,11 +14,20 @@ module.exports = {
       },
       colors: {
         tagColor: '#40ACBA',
+        mint: '#8bccbe',
+        lapis: '#2A6797',
+        sand: '#fae0be',
+        mist: '#bdddf4',
+        highlight: '#bdddf4'
+      },
+      fontFamily: {
+        'inter': ['var(--font-inter'],
+        'manrope': ['var(--font-manrope)']
       },
       keyframes: {
         'heartbeat': {
           "75%": {
-            transform: "scale(1.5)",
+            transform: "scale(1.5)",  
           },
           "90%": {
             transform: "scale(1)",

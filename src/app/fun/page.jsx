@@ -1,6 +1,4 @@
 ﻿import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import post1 from '/public/images/fun/Post1.svg';
 import post2 from '/public/images/fun/Post2.svg';
 import post3 from '/public/images/fun/Post3.svg';
@@ -19,7 +17,6 @@ export default function fun() {
     return (
         <main className={"bg-white flex flex-col min-h-screen min-w-screen"}>
             <div className={"mx-[10%] md:mx-[15%] 2xl:mx-[25%] "}>
-                <Navbar/>
                 <div className={"mt-40"}>
                     <Title title={"More Of My Work"}
                            subtitle={"THINGS I MADE FOR FUN!"}
@@ -131,7 +128,6 @@ export default function fun() {
 
                     <MoreToExplore/>
                 </div>
-                <Footer/>
             </div>
 
         </main>

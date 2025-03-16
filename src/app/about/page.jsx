@@ -1,6 +1,4 @@
 ﻿import Image from "next/image";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import aboutCover from '/public/images/aboutCoverImage.JPG';
 import wave from '/public/images/Wave.svg';
 import Title from "../../components/Title";
@@ -12,7 +10,6 @@ export default function About() {
     return (
         <main className={"bg-white flex flex-col"}>
             <div className={"mx-[10%] md:mx-[15%]"}>
-                <Navbar/>
                 <div className={"mt-40"}>
                     <div>
                         <Title
@@ -135,7 +132,6 @@ export default function About() {
                     </div>
 
                 </div>
-                <Footer/>
             </div>
 
         </main>
