@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
     return (
-        <nav className={"relative rounded-3xl bg-mint mb-4 font-manrope overflow-clip text-white mx-[5%] "}>
+        <nav className={"relative rounded-3xl bg-mint mt-20 mb-4 font-manrope overflow-clip text-white mx-[5%] "}>
             <div className={"flex flex-col lg:flex-row w-fit lg:w-full mx-auto lg:mx-0 md:justify-items-start lg:justify-evenly md:px-28 lg:px-0"}>
                 <div className={"flex flex-col md:gap-3 w-fit font-semibold pt-16 lg:mb-16"}>
                     <div className={"flex flex-row text-4xl md:text-7xl"}>

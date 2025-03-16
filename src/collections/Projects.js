@@ -37,7 +37,7 @@ export const Projects = {
             1: "logo design",
             2: "graphic design"
         },
-        link: ''
+        link: '/tkhs'
     },
     3: {
         title: "GBCS Group",

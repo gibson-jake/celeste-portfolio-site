@@ -22,7 +22,7 @@ const NavBar = () => {
 
     return (
         <nav className="bg-white fixed top-0 left-0 w-full z-20 font-manrope">
-            <div className="pt-12 pb-8 px-8 lg:p-12 flex items-center justify-between lg:mx-[10%]  2xl:mx-[20%]">
+            <div className="pt-12 pb-8 px-8 lg:p-12 flex items-center justify-between lg:mx-[10%]  2xl:mx-[20%] ">
                 <div className="text-black text-xl font-semibold whitespace-nowrap"><a href="/">celeste lu</a></div>
                 <div className="hidden lg:flex space-x-10 text-black text-xl *: ">
                     <div className={"hover:-translate-y-1.5 transition-transform duration-500"}>
