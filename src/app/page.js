@@ -43,7 +43,7 @@ export default function Home() {
             </div>
             <div className={"w-[120%] mb-8 lg:w-0"}>
                 <Image
-                    className={"relative lg:absolute rotate-[12deg] lg:rotate-[40deg] object-cover h-fit w-full -mx-12 lg:mx-0 my-12 lg:-left-[50%] lg:bottom-[15%] 2xl:bottom-[30%]"}
+                    className={"relative lg:absolute rotate-[12deg] lg:rotate-[40deg] object-cover h-fit w-full -mx-12 lg:mx-0 my-12 lg:-left-[55%] lg:bottom-[15%] 2xl:bottom-[30%]"}
                     src={largeSandWaves}
                     alt={"squiggle"}
                 />
